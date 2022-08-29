@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title> 
+</head>
+<body>
+
+    <h1>My Family app</h1>
+
+    <h2>My first MVT - CoderHouse</h2>
+    
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+
+            <th scope="col">Last Name</th>
+
+            <th scope="col">Age</th>
+
+            <th scope="col">Birth Date</th>
+
+          </tr>
+        </thead>     
+    {% for family in my_family %}
+    <tbody>
+        <tr>
+          <td>{{family.name}}</td>
+          <td>{{family.last_name}}</td>
+          <td>{{family.age}}</td>
+          <td>{{family.birth_date}}</td>
+        </tr>
+      </tbody>
+    </table>
+    {% endfor %}
+</body>
+</html>
